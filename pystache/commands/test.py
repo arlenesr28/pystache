@@ -6,6 +6,7 @@ This module provides a command to test pystache (unit tests, doctests, etc).
 """
 
 import sys
+import loggin
 
 from pystache.tests.main import main as run_tests
 
