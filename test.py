@@ -2,7 +2,7 @@
 # coding: utf-8
 
 import unittest
-#import xmlrunner
+import xmlrunner
 
 def runner(output='python_tests_xml'):
     return xmlrunner.XMLTestRunner(
