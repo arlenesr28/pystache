@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # coding: utf-8
-from pystache.tests.main import main as run_tests_with_junit 
 
 import unittest
 import xmlrunner
