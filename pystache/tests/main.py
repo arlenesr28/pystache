@@ -10,7 +10,7 @@ This module is for our test console script.
 import os
 import sys
 import unittest
-from unittest import TestCase, TestProgram
+from unittest import TestCase, TestProgram, xmlrunner
 
 import pystache
 from pystache.tests.common import PACKAGE_DIR, PROJECT_DIR, UNITTEST_FILE_PREFIX
