@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="1" name="tests.test_simple.TestSimple-20161020161924" skipped="0" tests="7" time="0.004">
+	<testcase classname="tests.test_simple.TestSimple" name="test_callables" time="0.000"/>
+	<testcase classname="tests.test_simple.TestSimple" name="test_empty_context" time="0.000"/>
+	<testcase classname="tests.test_simple.TestSimple" name="test_looping_and_negation_context" time="0.001"/>
+	<testcase classname="tests.test_simple.TestSimple" name="test_nested_context" time="0.000"/>
+	<testcase classname="tests.test_simple.TestSimple" name="test_non_existent_value_renders_blank" time="0.001"/>
+	<testcase classname="tests.test_simple.TestSimple" name="test_rendering_partial" time="0.001"/>
+	<testcase classname="tests.test_simple.TestSimple" name="test_template_partial_extension" time="0.001">
+		<failure message="String mismatch: different characters
+
+        Expected: &quot;&quot;&quot;Welcome
+-------
+
+## Again, Welcome! ##&quot;&quot;&quot;
+        Actual:   &quot;&quot;&quot;Welcome
+-------
+
+## Again, Welcome! ##&quot;&quot;&quot;
+
+        Expected: u'Welcome\n-------\n\n## Again, Welcome! ##'
+        Actual:   u'Welcome\r\n-------\r\n\r\n## Again, Welcome! ##'" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Users\asalgado\Documents\Laureate\pystache\pystache\tests\test_simple.py", line 83, in test_template_partial_extension
+    ## Again, Welcome! ##""")
+  File "C:\Users\asalgado\Documents\Laureate\pystache\pystache\tests\common.py", line 160, in assertString
+    self.assertEqual(actual, expected, make_message("different characters"))
+AssertionError: String mismatch: different characters
+
+        Expected: """Welcome
+-------
+
+## Again, Welcome! ##"""
+        Actual:   """Welcome
+-------
+
+## Again, Welcome! ##"""
+
+        Expected: u'Welcome\n-------\n\n## Again, Welcome! ##'
+        Actual:   u'Welcome\r\n-------\r\n\r\n## Again, Welcome! ##'
+]]>		</failure>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

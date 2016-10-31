@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" name="tests.test_renderer.RendererInitTestCase-20161020161924" skipped="0" tests="17" time="0.001">
+	<testcase classname="tests.test_renderer.RendererInitTestCase" name="test_decode_errors" time="0.000"/>
+	<testcase classname="tests.test_renderer.RendererInitTestCase" name="test_decode_errors__default" time="0.000"/>
+	<testcase classname="tests.test_renderer.RendererInitTestCase" name="test_escape" time="0.000"/>
+	<testcase classname="tests.test_renderer.RendererInitTestCase" name="test_escape__default" time="0.000"/>
+	<testcase classname="tests.test_renderer.RendererInitTestCase" name="test_file_encoding" time="0.000"/>
+	<testcase classname="tests.test_renderer.RendererInitTestCase" name="test_file_encoding__default" time="0.000"/>
+	<testcase classname="tests.test_renderer.RendererInitTestCase" name="test_file_extension" time="0.000"/>
+	<testcase classname="tests.test_renderer.RendererInitTestCase" name="test_file_extension__default" time="0.000"/>
+	<testcase classname="tests.test_renderer.RendererInitTestCase" name="test_missing_tags" time="0.001"/>
+	<testcase classname="tests.test_renderer.RendererInitTestCase" name="test_missing_tags__default" time="0.000"/>
+	<testcase classname="tests.test_renderer.RendererInitTestCase" name="test_partials" time="0.000"/>
+	<testcase classname="tests.test_renderer.RendererInitTestCase" name="test_partials__default" time="0.000"/>
+	<testcase classname="tests.test_renderer.RendererInitTestCase" name="test_search_dirs__default" time="0.000"/>
+	<testcase classname="tests.test_renderer.RendererInitTestCase" name="test_search_dirs__list" time="0.000"/>
+	<testcase classname="tests.test_renderer.RendererInitTestCase" name="test_search_dirs__string" time="0.000"/>
+	<testcase classname="tests.test_renderer.RendererInitTestCase" name="test_string_encoding" time="0.000"/>
+	<testcase classname="tests.test_renderer.RendererInitTestCase" name="test_string_encoding__default" time="0.000"/>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>

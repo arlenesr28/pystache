@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="4" name="tests.test_examples.TestView-20161020161924" skipped="0" tests="12" time="0.076">
+	<testcase classname="tests.test_examples.TestView" name="test_comments" time="0.002"/>
+	<testcase classname="tests.test_examples.TestView" name="test_escaping" time="0.002"/>
+	<testcase classname="tests.test_examples.TestView" name="test_literal" time="0.002"/>
+	<testcase classname="tests.test_examples.TestView" name="test_nested_context" time="0.002"/>
+	<testcase classname="tests.test_examples.TestView" name="test_nested_context_is_available_in_view" time="0.000"/>
+	<testcase classname="tests.test_examples.TestView" name="test_partial_in_partial_has_access_to_grand_parent_context" time="0.036"/>
+	<testcase classname="tests.test_examples.TestView" name="test_unicode_input" time="0.002"/>
+	<testcase classname="tests.test_examples.TestView" name="test_unicode_output" time="0.002"/>
+	<testcase classname="tests.test_examples.TestView" name="test_delimiters" time="0.005">
+		<failure message="String mismatch: different characters
+
+        Expected: &quot;&quot;&quot;* It worked the first time.
+* And it worked the second time.
+* Then, surprisingly, it worked the third time.
+&quot;&quot;&quot;
+        Actual:   &quot;&quot;&quot;* It worked the first time.
+* And it worked the second time.
+* Then, surprisingly, it worked the third time.
+&quot;&quot;&quot;
+
+        Expected: u'* It worked the first time.\n* And it worked the second time.\n* Then, surprisingly, it worked the third time.\n'
+        Actual:   u'* It worked the first time.\r\n* And it worked the second time.\r\n* Then, surprisingly, it worked the third time.\r\n'" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Users\asalgado\Documents\Laureate\pystache\pystache\tests\test_examples.py", line 80, in test_delimiters
+    """)
+  File "C:\Users\asalgado\Documents\Laureate\pystache\pystache\tests\common.py", line 160, in assertString
+    self.assertEqual(actual, expected, make_message("different characters"))
+AssertionError: String mismatch: different characters
+
+        Expected: """* It worked the first time.
+* And it worked the second time.
+* Then, surprisingly, it worked the third time.
+"""
+        Actual:   """* It worked the first time.
+* And it worked the second time.
+* Then, surprisingly, it worked the third time.
+"""
+
+        Expected: u'* It worked the first time.\n* And it worked the second time.\n* Then, surprisingly, it worked the third time.\n'
+        Actual:   u'* It worked the first time.\r\n* And it worked the second time.\r\n* Then, surprisingly, it worked the third time.\r\n'
+]]>		</failure>
+	</testcase>
+	<testcase classname="tests.test_examples.TestView" name="test_double_section" time="0.002">
+		<failure message="String mismatch: different characters
+
+        Expected: &quot;&quot;&quot;* first
+* second
+* third&quot;&quot;&quot;
+        Actual:   &quot;&quot;&quot;* first
+* second
+* third&quot;&quot;&quot;
+
+        Expected: u'* first\n* second\n* third'
+        Actual:   u'* first\r\n* second\r\n* third'" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Users\asalgado\Documents\Laureate\pystache\pystache\tests\test_examples.py", line 35, in test_double_section
+    self._assert(DoubleSection(), u"* first\n* second\n* third")
+  File "C:\Users\asalgado\Documents\Laureate\pystache\pystache\tests\test_examples.py", line 29, in _assert
+    self.assertString(actual, expected)
+  File "C:\Users\asalgado\Documents\Laureate\pystache\pystache\tests\common.py", line 160, in assertString
+    self.assertEqual(actual, expected, make_message("different characters"))
+AssertionError: String mismatch: different characters
+
+        Expected: """* first
+* second
+* third"""
+        Actual:   """* first
+* second
+* third"""
+
+        Expected: u'* first\n* second\n* third'
+        Actual:   u'* first\r\n* second\r\n* third'
+]]>		</failure>
+	</testcase>
+	<testcase classname="tests.test_examples.TestView" name="test_template_partial" time="0.016">
+		<failure message="String mismatch: different characters
+
+        Expected: &quot;&quot;&quot;&lt;h1&gt;Welcome&lt;/h1&gt;
+Again, Welcome!&quot;&quot;&quot;
+        Actual:   &quot;&quot;&quot;&lt;h1&gt;Welcome&lt;/h1&gt;
+Again, Welcome!&quot;&quot;&quot;
+
+        Expected: u'&lt;h1&gt;Welcome&lt;/h1&gt;\nAgain, Welcome!'
+        Actual:   u'&lt;h1&gt;Welcome&lt;/h1&gt;\r\nAgain, Welcome!'" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Users\asalgado\Documents\Laureate\pystache\pystache\tests\test_examples.py", line 60, in test_template_partial
+    Again, Welcome!""")
+  File "C:\Users\asalgado\Documents\Laureate\pystache\pystache\tests\common.py", line 160, in assertString
+    self.assertEqual(actual, expected, make_message("different characters"))
+AssertionError: String mismatch: different characters
+
+        Expected: """<h1>Welcome</h1>
+Again, Welcome!"""
+        Actual:   """<h1>Welcome</h1>
+Again, Welcome!"""
+
+        Expected: u'<h1>Welcome</h1>\nAgain, Welcome!'
+        Actual:   u'<h1>Welcome</h1>\r\nAgain, Welcome!'
+]]>		</failure>
+	</testcase>
+	<testcase classname="tests.test_examples.TestView" name="test_template_partial_extension" time="0.005">
+		<failure message="String mismatch: different characters
+
+        Expected: &quot;&quot;&quot;Welcome
+-------
+
+## Again, Welcome! ##&quot;&quot;&quot;
+        Actual:   &quot;&quot;&quot;Welcome
+-------
+
+## Again, Welcome! ##&quot;&quot;&quot;
+
+        Expected: u'Welcome\n-------\n\n## Again, Welcome! ##'
+        Actual:   u'Welcome\r\n-------\r\n\r\n## Again, Welcome! ##'" type="AssertionError">
+<![CDATA[Traceback (most recent call last):
+  File "C:\Users\asalgado\Documents\Laureate\pystache\pystache\tests\test_examples.py", line 71, in test_template_partial_extension
+    ## Again, Welcome! ##""")
+  File "C:\Users\asalgado\Documents\Laureate\pystache\pystache\tests\common.py", line 160, in assertString
+    self.assertEqual(actual, expected, make_message("different characters"))
+AssertionError: String mismatch: different characters
+
+        Expected: """Welcome
+-------
+
+## Again, Welcome! ##"""
+        Actual:   """Welcome
+-------
+
+## Again, Welcome! ##"""
+
+        Expected: u'Welcome\n-------\n\n## Again, Welcome! ##'
+        Actual:   u'Welcome\r\n-------\r\n\r\n## Again, Welcome! ##'
+]]>		</failure>
+	</testcase>
+	<system-out>
+<![CDATA[]]>	</system-out>
+	<system-err>
+<![CDATA[]]>	</system-err>
+</testsuite>
