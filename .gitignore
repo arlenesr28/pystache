@@ -17,7 +17,7 @@ MANIFEST
 pystache.egg-info
 .*.swp
 coverage.xml
-python_tests_xml
+#python_tests_xml
 .coverage
 coverage
 pep8.log
